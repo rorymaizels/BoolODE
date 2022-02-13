@@ -1,4 +1,19 @@
-*NOTE: The BoolODE code is being refactored, and is currently being tested. Please use the V0.1 release for the version of the code used in the BEELINE publication*
+# NOTE:
+
+This is a tweak of the original BoolODE package to model splicing dynamics in the core model. Originally, BoolODE models:
+
+dx/dt = m f(X) - l\_x x | dp/dt = r x  - l\_p p
+
+Here, it has been tweaked to model:
+
+du/dt = m f(X) - b u 
+
+dx/dt = b u - l\_x x
+
+dp/dt = r x - l\_p p
+
+
+----
 
 
 # BoolODE
